@@ -1,7 +1,0 @@
-Flask==2.0.2
-requests==2.27.1
-ptvsd==4.3.2 # Required for debugging.
-flask_assets
-pyrebase4
-firebase_admin
-google-cloud-secret-manager
