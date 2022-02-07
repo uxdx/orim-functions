@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}Index{% endblock %}
+{% block content %}
+  <h1>Index</h1>
+  <p class="important">
+    Welcome on my awesome homepage.
+    <ol class = "main_video_line" >
+      {% for key, value in video_list.items()%}
+        {% for key1, value1 in value.items()%}
+          <div> {{key1}} :: {{value1}}  </div>
+        {% endfor %}
+      {% endfor%}
+  
+    </ol> 
+    <div>
+        {{config}}
+    </div>
+{% endblock %}
